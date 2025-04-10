@@ -16,51 +16,48 @@ response = requests.get(url)
 
 # Check if the request was successful
 if response.status_code == 200:
-     data = response.json()
-     response = requests.get(url)
+    data = response.json()
 
     # Extract weather forecast data
-dates = []
-temps = []
-humidity = []
-wind_speed = []
+    dates = []
+    temps = []
+    humidity = []
+    wind_speed = []
 
-for entry in data["list"]:
+    for entry in data["list"]:
         dates.append(datetime.datetime.strptime(entry["dt_txt"], "%Y-%m-%d %H:%M:%S"))
         temps.append(entry["main"]["temp"])
         humidity.append(entry["main"]["humidity"])
         wind_speed.append(entry["wind"]["speed"])
-    
-    # Set Seaborn style
-sns.set_theme(style="darkgrid")
 
+    # Set Seaborn style
+    sns.set_theme(style="darkgrid")
 
     # Create a figure with multiple subplots
-fig, axes = plt.subplots(3, 1, figsize=(10, 12))
+    fig, axes = plt.subplots(3, 1, figsize=(10, 12))
 
     # Temperature Plot
-sns.lineplot(x=dates, y=temps, ax=axes[0], marker="o", color="red")
-axes[0].set_title("Temperature Forecast")
-axes[0].set_ylabel("Temperature (°C)")
+    sns.lineplot(x=dates, y=temps, ax=axes[0], marker="o", color="red")
+    axes[0].set_title("Temperature Forecast")
+    axes[0].set_ylabel("Temperature (°C)")
 
     # Humidity Plot
-sns.lineplot(x=dates, y=humidity, ax=axes[1], marker="o", color="blue")
-axes[1].set_title("Humidity Forecast")
-axes[1].set_ylabel("Humidity (%)")
+    sns.lineplot(x=dates, y=humidity, ax=axes[1], marker="o", color="blue")
+    axes[1].set_title("Humidity Forecast")
+    axes[1].set_ylabel("Humidity (%)")
 
     # Wind Speed Plot
-sns.lineplot(x=dates, y=wind_speed, ax=axes[2], marker="o", color="green")
-axes[2].set_title("Wind Speed Forecast")
-axes[2].set_ylabel("Wind Speed (m/s)")
+    sns.lineplot(x=dates, y=wind_speed, ax=axes[2], marker="o", color="green")
+    axes[2].set_title("Wind Speed Forecast")
+    axes[2].set_ylabel("Wind Speed (m/s)")
 
     # Rotate x-axis labels
-for ax in axes:
+    for ax in axes:
         ax.set_xlabel("Date & Time")
         ax.tick_params(axis="x", rotation=45)
 
-plt.tight_layout()
-plt.show()
+    plt.tight_layout()
+    plt.show()
 
-
-# This code fetches the weather forecast data for New York City from the OpenWeatherMap API and visualizes it using Seaborn and Matplotlib.
-# It creates three line plots for temperature, humidity, and wind speed over time.
+else:
+    print(f"Failed to fetch weather data. HTTP Status Code: {response.status_code}")
