@@ -1,0 +1,75 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "Hello", "Hey", "What’s up", "How are you"],
+            "responses": ["Hi there!", "Hello!", "Hey!", "Nothing much.", "I’m fine, thank you."]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye", "Take care"],
+            "responses": ["Goodbye!", "See you later!", "Take care!"]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thank you", "Thanks", "Thanks a lot", "I appreciate it"],
+            "responses": ["You're welcome!", "No problem!", "Glad I could help."]
+        },
+        {
+            "tag": "about",
+            "patterns": ["What can you do?", "Who are you?", "What is your purpose?"],
+            "responses": ["I am a finance chatbot for India.", "I help with financial queries like banking, investments, and budgeting."]
+        },
+        {
+            "tag": "budgeting",
+            "patterns": ["How can I make a budget?", "Best budgeting strategy?", "How do I manage expenses?"],
+            "responses": ["Use the 50/30/20 rule: 50% for needs, 30% for wants, 20% for savings.", 
+                          "Track your income and expenses, set financial goals, and cut unnecessary costs."]
+        },
+        {
+            "tag": "credit_score",
+            "patterns": ["What is a credit score?", "How can I check my credit score?", "How to improve my credit score?"],
+            "responses": ["A credit score reflects your creditworthiness. Higher scores mean better chances of getting loans.",
+                          "Check your score for free on CIBIL, Experian, or BankBazaar.",
+                          "Pay EMIs on time, reduce credit utilization, and avoid multiple loan applications."]
+        },
+        {
+            "tag": "investment",
+            "patterns": ["Best investment options in India?", "Where should I invest?", "FD vs Mutual Fund?", "Stock market or real estate?"],
+            "responses": ["Investment depends on your risk appetite. Safe options: FDs, PPF, Bonds. Higher return: Stocks, Mutual Funds.",
+                          "Mutual funds can offer better returns but carry risks. FD is safer but offers lower returns."]
+        },
+        {
+            "tag": "loans",
+            "patterns": ["What are the types of loans?", "Best loan for buying a home?", "How to get a personal loan?"],
+            "responses": ["Common loans: Home Loan, Personal Loan, Education Loan, Car Loan, Business Loan.",
+                          "For home loans, check interest rates at SBI, HDFC, ICICI, and other banks.",
+                          "To get a personal loan, maintain a good credit score and provide proof of income."]
+        },
+        {
+            "tag": "taxes",
+            "patterns": ["What is income tax?", "How to save tax in India?", "What is 80C deduction?"],
+            "responses": ["Income tax is a tax on your earnings. India has different slabs based on income.",
+                          "Save tax by investing in PPF, ELSS, NPS, and using deductions like 80C, 80D.",
+                          "Under 80C, you can claim deductions up to ₹1.5 lakh for investments in LIC, PPF, EPF, ELSS."]
+        },
+        {
+            "tag": "fd_rates",
+            "patterns": ["What is the FD rate in SBI?", "Latest FD rates in HDFC?", "Current fixed deposit rates in BOI?"],
+            "responses": ["Let me check the latest FD rates for you. Please wait a moment."]
+        },
+        {
+            "tag": "mutual_funds",
+            "patterns": ["Best mutual funds for 2024?", "How to invest in mutual funds?", "What is SIP?"],
+            "responses": ["A Systematic Investment Plan (SIP) helps you invest in mutual funds monthly.",
+                          "Top funds depend on market conditions. Check Moneycontrol or Groww for rankings."]
+        },
+        {
+            "tag": "upi",
+            "patterns": ["How to set up UPI?", "Best UPI apps in India?", "Is UPI safe?"],
+            "responses": ["To set up UPI, link your bank account to Google Pay, PhonePe, or Paytm and create a UPI PIN.",
+                          "UPI apps include Google Pay, PhonePe, Paytm, and BHIM UPI.",
+                          "UPI is safe if you do not share your PIN or OTP with anyone."]
+        }
+    ]
+}

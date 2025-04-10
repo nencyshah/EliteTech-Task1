@@ -1,0 +1,64 @@
+{     
+  "intents": [         
+    {             
+      "tag": "greeting",             
+      "patterns": ["Hi", "Hello", "Hey", "What’s up", "How are you"],             
+      "responses": ["Hey there!", "Hi!", "Hello!", "All good here. You?", "Doing great, thanks for asking!"]         
+    },         
+    {             
+      "tag": "goodbye",             
+      "patterns": ["Bye", "See you later", "Goodbye", "Take care"],             
+      "responses": ["Catch you later!", "Bye-bye!", "Stay safe!", "See you soon!"]         
+    },         
+    {             
+      "tag": "thanks",             
+      "patterns": ["Thank you", "Thanks", "Thanks a lot", "I appreciate it"],             
+      "responses": ["Anytime!", "You're very welcome!", "Happy to help!", "Glad to assist!"]         
+    },         
+    {             
+      "tag": "about",             
+      "patterns": ["What can you do?", "Who are you?", "What is your purpose?"],             
+      "responses": ["I'm a general-purpose chatbot here to make your life easier.", "I can help you with information, tasks, and a bit of fun too!"]         
+    },         
+    {             
+      "tag": "weather",             
+      "patterns": ["What's the weather like?", "Will it rain today?", "Is it sunny outside?"],             
+      "responses": ["I can't check real-time weather, but you can try apps like AccuWeather or Weather.com!", "Looks like a good time to peek outside or check your weather app."]         
+    },         
+    {             
+      "tag": "jokes",             
+      "patterns": ["Tell me a joke", "Make me laugh", "Do you know any jokes?"],             
+      "responses": ["Why don't scientists trust atoms? Because they make up everything!", "I'm on a seafood diet. I see food, and I eat it!"]         
+    },         
+    {             
+      "tag": "time",             
+      "patterns": ["What time is it?", "Tell me the current time", "Do you know the time?"],             
+      "responses": ["I'm not a clock, but checking your phone or computer will help!", "You can ask your digital assistant or check the screen for time."]         
+    },         
+    {             
+      "tag": "date",             
+      "patterns": ["What’s the date today?", "Tell me today’s date", "Which day is it?"],             
+      "responses": ["Check your calendar app, or just swipe down on your phone.", "Today is a great day to do something awesome!"]         
+    },         
+    {             
+      "tag": "hobbies",             
+      "patterns": ["What are some fun hobbies?", "Give me hobby ideas", "What should I do in my free time?"],             
+      "responses": ["Try reading, painting, gaming, gardening, or even coding!", "Explore music, sports, or learn a new skill online!"]         
+    },         
+    {             
+      "tag": "motivation",             
+      "patterns": ["I feel low", "Give me motivation", "Say something inspiring"],             
+      "responses": ["You’ve made it this far—keep going!", "Every day is a fresh start. You've got this!", "Believe in yourself, always."]         
+    },         
+    {             
+      "tag": "news",             
+      "patterns": ["What's the latest news?", "Any trending news?", "Tell me what's happening around the world"],             
+      "responses": ["I recommend checking Google News or your favorite news app.", "Head over to a news site or app for the freshest updates!"]         
+    },         
+    {             
+      "tag": "food",             
+      "patterns": ["What should I eat?", "Suggest a meal", "I’m hungry"],             
+      "responses": ["How about trying something new like Thai or Mexican today?", "Maybe a pizza, salad, or something sweet to cheer you up?"]         
+    }     
+  ] 
+}
